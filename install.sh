@@ -1,4 +1,6 @@
-﻿#
+﻿#!/bin/sh
+
+#
 # Install mkdocs and material theme using python's pip
 #
 # Required: Python 3.9
