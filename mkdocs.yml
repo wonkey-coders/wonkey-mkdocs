@@ -1,0 +1,149 @@
+﻿site_name: Wonkey Reference
+
+#
+# Navigation
+#
+nav:
+    - Start:                          index.md
+#    - Introduction:
+#        - About: about_docs.md
+    - User Guide:
+        - Overview:                   guide/index.md
+        - The 'wake' compiler:        guide/wake.md
+        - Target SDKs:
+            - Overview:               guide/sdks/index.md
+            - Android:                guide/sdks/android.md
+            - Emscripten:             guide/sdks/emscripten.md
+            - iOS:                    guide/sdks/ios.md
+            - Linux:                  guide/sdks/linux.md
+            - macOS:                  guide/sdks/mac.md
+            - Raspberry Pi:           guide/sdks/raspberry.md
+            - Windows:                guide/sdks/windows.md
+    - Language Reference:
+        - Overview:                   lang/index.md
+        - Imports:                    lang/import.md
+        - Assets:                     lang/assets.md
+        - Comments:                   lang/comments.md
+        - Namespaces:                 lang/namespace.md
+        - Functions:
+            - Global functions:       lang/function.md
+            - Lambda functions:       lang/lambda.md
+            - Function overloading:   lang/function-overloading.md
+            - Function values:        lang/function-values.md
+        - Expressions:
+            - Overview:               lang/expressions.md
+            - Operators:              lang/operators.md
+            - Casting:                lang/cast.md
+            - Type balancing:         lang/type-balancing.md
+        - Variables:                  lang/variables.md
+        - Strings:                    lang/string.md
+        - Variants:                   lang/variant.md
+        - Aliases:                    lang/alias.md
+        - Basic types:                lang/datatypes.md
+        - Compound types:
+            - Overview:               lang/compound-types.md
+            - Arrays:                 lang/array.md
+            - Enums:                  lang/enum.md
+            - Pointers:               lang/pointer.md
+            - Classes:                lang/class.md
+            - Structs:                lang/struct.md
+            - Interfaces:             lang/interface.md
+            - Fields:                 lang/field.md
+            - Methods:                lang/method.md
+            - Class/Struct Functions: lang/class-function.md
+            - Properties:             lang/property.md
+            - Conversion Operators:   lang/conversion-operators.md
+            - Operator overloading:   lang/operator-overloading.md
+            - Inheritance:            lang/extends.md
+            - Extensions:             lang/extension.md
+            - Encapsulation:          lang/encapsulation.md
+        - Generics:
+            - Overview:               lang/generics.md
+            - Generic Function:       lang/generic-function.md
+            - Generic Class:          lang/generic-class.md
+            - Generic Struct:         lang/generic-struct.md
+            - Generic Interface:      lang/generic-interface.md
+        - Conditional statements:     lang/conditional-statements.md
+        - Loop statements:            lang/loop-statements.md
+        - The Preprocessor:           lang/preprocessor.md
+        - Error handling:             lang/error-handling.md
+        - Weak references:            lang/weak-references.md
+        - Reflection:                 lang/reflection.md
+        - Modules:                    lang/modules.md
+        - Native code:                lang/native-code.md
+        - Misc:                       lang/misc.md
+    - Modules Reference:
+        - Overview:                   modules/index.md
+
+#    - About:
+#        - About: about_docs.md
+
+#    - Wonkey Site: https://github.com/wonkey-coders/wonkey
+
+
+# Theme
+#
+# built-in themes:
+#
+#     + mkdocs (default)
+#     + readthedocs
+#     + windmill
+#     + material
+theme:
+    name: material
+    logo: 'images/w_round.png'
+    favicon: 'images/favicon.ico'
+    palette:
+        scheme: slate
+        primary: 'black'
+        accent: 'light blue'
+        #primary: 'light blue'
+        #accent: 'light blue'
+        #primary: 'Red'
+        #accent: 'Red'
+    font:
+        #text: 'Ubuntu'
+        #code: 'Ubuntu Mono'
+#    feature:
+#        tabs: true
+    highlightjs: true
+    hljs_languages:
+        - monkey
+    shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+#
+# CSS
+#
+extra_css:
+    - 'stylesheets/extra.css'
+#
+# Extensions
+#
+markdown_extensions:
+    - codehilite:
+        linenums: true
+        guess_lang: false
+    - admonition
+    - toc:
+        permalink: "#"
+        separator: "_"
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
