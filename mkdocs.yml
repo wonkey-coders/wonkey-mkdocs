@@ -101,14 +101,15 @@ theme:
         #accent: 'light blue'
         #primary: 'Red'
         #accent: 'Red'
-    font:
-        #text: 'Ubuntu'
-        #code: 'Ubuntu Mono'
+#    font:
+#        text: 'Ubuntu'
+#        code: 'Ubuntu Mono'
 #    feature:
 #        tabs: true
-    highlightjs: true
-    hljs_languages:
-        - monkey
+    #highlightjs: true
+    #hljs_languages:
+    #    - monkey
+#    use_pygments: true
     shortcuts:
         help: 191    # ?
         next: 78     # n
@@ -124,9 +125,9 @@ extra_css:
 # Extensions
 #
 markdown_extensions:
-    - codehilite:
-        linenums: true
-        guess_lang: false
+    #- codehilite:
+    #    linenums: true
+    #    guess_lang: false
     - admonition
     - toc:
         permalink: "#"
@@ -139,6 +140,8 @@ markdown_extensions:
     - pymdownx.details
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#    - pymdownx.highligth:
+#        linenums: true
     - pymdownx.inlinehilite
     - pymdownx.magiclink
     - pymdownx.mark
