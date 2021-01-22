@@ -1,16 +1,16 @@
-﻿body {
+body {
     //background-color: #DDDDDD;  // grey
     background-color: #23232F;    // slate
 }
 
 
 td, tr, table, pre {
-    background-color: #bbbbbbff;  // #CDCDCD;
+    //background-color: #bbbbbbff;  // #CDCDCD;
 }
 
 td, tr, table, pre, code, pre, .codehilite code, .codehilite pre {
-    background-color: #808080FF;  // table background for slate + white
-    //background-color: #191A21FF;  // table background for slate
+    background-color: #292A31FF;  // table background for slate
+    //background-color: #EEEEEEFF;  // table background for white
     //background-color: #EEEEEEFF;  // table background for white
     font-size: px2rem(18px);
     height: px2rem(13px);
